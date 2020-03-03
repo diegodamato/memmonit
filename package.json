@@ -1,0 +1,19 @@
+{
+  "name": "MemoryMonitoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "mocha test/*.js"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^7.1.0"
+  }
+}
