@@ -1,7 +1,7 @@
 {
-  "name": "MemoryMonitoring",
+  "name": "memmonit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library to help monitor operating system memory",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -12,9 +12,10 @@
   },
   "keywords": [
     "memory",
-    "monitoring"
+    "monitoring",
+    "lib"
   ],
-  "author": "",
+  "author": "Diego Damato",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
