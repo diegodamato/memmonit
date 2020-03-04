@@ -8,13 +8,17 @@
     "test": "mocha test/*.js"
   },
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "nyc mocha test/*.js"
   },
-  "keywords": [],
+  "keywords": [
+    "memory",
+    "monitoring"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.1.0"
+    "mocha": "^7.1.0",
+    "nyc": "^15.0.0"
   }
 }
