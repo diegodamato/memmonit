@@ -5,11 +5,11 @@ let memoryMonitoring = require('../lib/MemoryMonitoring');
 
 describe('Testing the MemoryMonitoring class getMemoryUsage method', () => {
     
-    it('#testando getMemoryUsage passando unidade errada por parametro(GBB)', () => {
+    it('#Testing getMemoryUsage by passing wrong unit by parameter(GBB)', () => {
         expect(() => memoryMonitoring.getMemoryUsage("GBB")).to.throw(Error);
     });
 
-    it('#testando getMemoryUsage passando unidade correta por parametro(GB)', () => {
+    it('#Testing getMemoryUsage by passing correct unit by parameter(GB)', () => {
         let mem = memoryMonitoring.getMemoryUsage("GB");
         assert.isNumber(mem);
     });
@@ -19,11 +19,11 @@ describe('Testing the MemoryMonitoring class getMemoryUsage method', () => {
 
 describe('Testing the MemoryMonitoring class getMemoryUsageTrunc method', () => {
     
-    it('#testando getMemoryUsageTrunc passando unidade errada por parametro(GBB)', () => {
+    it('#Testing getMemoryUsageTrunc by passing wrong unit by parameter(GBB)', () => {
         expect(() => memoryMonitoring.getMemoryUsageTrunc("GBB")).to.throw(Error);
     });
     
-    it('#testando getMemoryUsageTrunc passando unidade correta por parametro(GB)', () => {
+    it('#Testing getMemoryUsageTrunc by passing correct unit by parameter(GB)', () => {
         let mem = memoryMonitoring.getMemoryUsageTrunc("GB");
         assert.isNumber(mem);
     });
@@ -33,11 +33,11 @@ describe('Testing the MemoryMonitoring class getMemoryUsageTrunc method', () => 
 
 describe('Testing the MemoryMonitoring class getMemoryUsageFixed method', () => {
     
-    it('#testando getMemoryUsageFixed passando unidade errada por parametro(GBB)', () => {
+    it('#Testing getMemoryUsageFixed by passing wrong unit by parameter(GBB)', () => {
         expect(() => memoryMonitoring.getMemoryUsageFixed("GBB")).to.throw(Error);
     });
     
-    it('#testando getMemoryUsageFixed passando unidade correta por parametro(GB)', () => {
+    it('#Testing getMemoryUsageFixed by passing correct unit by parameter(GB)', () => {
         let mem = memoryMonitoring.getMemoryUsageFixed("GB", 3);
         assert.isNumber(mem);
     });
@@ -46,11 +46,11 @@ describe('Testing the MemoryMonitoring class getMemoryUsageFixed method', () => 
 
 describe('Testing the MemoryMonitoring class getMemoryTotal method', () => {
     
-    it('#testando getMemoryUsageFixed passando unidade errada por parametro(GBB)', () => {
+    it('#Testing getMemoryUsageFixed by passing wrong unit by parameter(GBB)', () => {
         expect(() => memoryMonitoring.getMemoryTotal("GBB")).to.throw(Error);
     });
     
-    it('#testando getMemoryUsageFixed passando unidade correta por parametro(GB)', () => {
+    it('#Testing getMemoryUsageFixed by passing correct unit by parameter(GB)', () => {
         let mem = memoryMonitoring.getMemoryTotal("GB", 3);
         assert.isNumber(mem);
     });
@@ -60,11 +60,11 @@ describe('Testing the MemoryMonitoring class getMemoryTotal method', () => {
 
 describe('Testing the MemoryMonitoring class getMemoryTotalTrunc method', () => {
     
-    it('#testando getMemoryUsageFixed passando unidade errada por parametro(GBB)', () => {
+    it('#Testing getMemoryUsageFixed by passing wrong unit by parameter(GBB)', () => {
         expect(() => memoryMonitoring.getMemoryTotalTrunc("GBB")).to.throw(Error);
     });
     
-    it('#testando getMemoryUsageFixed passando unidade correta por parametro(GB)', () => {
+    it('#Testing getMemoryUsageFixed by passing correct unit by parameter(GB)', () => {
         let mem = memoryMonitoring.getMemoryTotalTrunc("GB", 3);
         assert.isNumber(mem);
     });
@@ -74,11 +74,11 @@ describe('Testing the MemoryMonitoring class getMemoryTotalTrunc method', () => 
 
 describe('Testing the MemoryMonitoring class getMemoryTotalFixed method', () => {
     
-    it('#testando getMemoryUsageFixed passando unidade errada por parametro(GBB)', () => {
+    it('#Testing getMemoryUsageFixed by passing wrong unit by parameter(GBB)', () => {
         expect(() => memoryMonitoring.getMemoryTotalFixed("GBB")).to.throw(Error);
     });
     
-    it('#testando getMemoryUsageFixed passando unidade correta por parametro(GB)', () => {
+    it('#Testing getMemoryUsageFixed by passing correct unit by parameter(GB)', () => {
         let mem = memoryMonitoring.getMemoryTotalFixed("GB", 3);
         assert.isNumber(mem);
     });
@@ -88,12 +88,13 @@ describe('Testing the MemoryMonitoring class getMemoryTotalFixed method', () => 
 
 describe('Testing the MemoryMonitoring class _getUnityValue method', () => {
     
-    it('#testando _getUnityValue passando unidade correta por parametro(GB)', () => {
+    it('#Testing _getUnityValue passing wrong unit by parameter(GBB)', () => {
+        assert.isFalse(memoryMonitoring._getUnityValue("GBB"));
+    });
+
+    it('#Testing _getUnityValue passing correct unit by parameter(GB)', () => {
         assert.isTrue(memoryMonitoring._getUnityValue("GB"));
     });
 
-    it('#testando _getUnityValue passando unidade errada por parametro(GBB)', () => {
-        assert.isFalse(memoryMonitoring._getUnityValue("GBB"));
-    });
 
 });
