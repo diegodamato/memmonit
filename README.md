@@ -1,4 +1,4 @@
-# MemoryMonitoring
+# Memmonit
 A library to help monitor operating system memory.
 
 # Installation
