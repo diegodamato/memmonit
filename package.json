@@ -10,6 +10,10 @@
   "scripts": {
     "test": "nyc mocha test/*.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegodamato/memmonit.git"
+  },
   "keywords": [
     "memory",
     "monitoring",
@@ -17,6 +21,10 @@
   ],
   "author": "Diego Damato",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegodamato/memmonit/issues"
+  },
+  "homepage": "https://github.com/diegodamato/memmonit#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^7.1.0",
