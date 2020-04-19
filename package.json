@@ -8,7 +8,8 @@
     "test": "mocha test/*.js"
   },
   "scripts": {
-    "test": "nyc mocha test/*.js"
+    "coverage": "nyc mocha test/*.js",
+    "test": "mocha test/*.js"
   },
   "repository": {
     "type": "git",
