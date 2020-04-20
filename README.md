@@ -1,4 +1,6 @@
 # Memmonit
+[![Build Status](https://travis-ci.org/diegodamato/memmonit.svg?branch=master)](https://travis-ci.org/diegodamato/memmonit)
+
 A library to help monitor operating system memory.
 
 # Installation
