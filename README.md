@@ -19,7 +19,7 @@ The available units are Kilobyte (kB), Megabyte (MB) and Gigabytes (GB).
 * ## Get memory usage
 
 ```js
-let memmonit = require("memmonit");
+let memmonit = require("memmonit").MemoryMonitoring;
 
 let memoryUsage = memmonit.getMemoryUsage("GB");
 console.log(memoryUsage);    //2.015354681
@@ -35,7 +35,7 @@ console.log(memoryUsageFixed);   //2.02
 * ## Get memory total
 
 ```js
-let memmonit = require("memmonit");
+let memmonit = require("memmonit").MemoryMonitoring;
 
 let memoryTotal = memmonit.getMemoryTotal("GB");
 console.log(memoryTotal);    //15.364312
@@ -51,7 +51,7 @@ console.log(memoryTotalFixed);   //15.36
     Records the memory monitoring in the file passed in the first parameter of the method
 
 ```js
-let memmonit = require("memmonit");
+let memmonit = require("memmonit").RegisterMonitoring;
 
 memmonit.registerMemoryUsage("./test.txt", "GB")
 memmonit.registerMemoryUsageTrunc("./test.txt", "GB")

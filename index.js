@@ -1,2 +1,2 @@
-module.exports = require('./lib/MemoryMonitoring');
-module.exports = require('./lib/RegisterMonitoring');
+module.exports.MemoryMonitoring = require('./lib/MemoryMonitoring');
+module.exports.RegisterMonitoring = require('./lib/RegisterMonitoring');
