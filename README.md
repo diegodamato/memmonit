@@ -1,6 +1,10 @@
 # Memmonit
 [![Build Status](https://travis-ci.org/diegodamato/memmonit.svg?branch=master)](https://travis-ci.org/diegodamato/memmonit)
 
+[![NPM Version](https://camo.githubusercontent.com/c7fc88a41d2dd973595c1762edca42c7ccc2a547/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f7361666972612e737667)](https://www.npmjs.com/package/memmonit)
+
+[![NPM Downloads](https://camo.githubusercontent.com/a2f229b65e01e97843365c61ba3023a4b01b16e3/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f646d2f7361666972612e737667)](https://npmcharts.com/compare/memmonit?minimal=true)
+
 A library to help monitor operating system memory.
 
 # Installation

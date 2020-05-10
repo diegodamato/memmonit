@@ -17,7 +17,7 @@ describe('Testing the RegisterMonitoring class', () => {
     })
 
     it('#Testing save monitoring of memoryUsage method to file', async() => {
-        await registerMonitoring.memoryUsage("./testeUsage.txt", "GB");
+        await registerMonitoring.registerMemoryUsage("./testeUsage.txt", "GB");
         let file = await readFile("./testeUsage.txt");
         let textFile = file.toString();
 
@@ -27,7 +27,7 @@ describe('Testing the RegisterMonitoring class', () => {
     });
 
     it('#Testing save monitoring of memoryUsageTrunc method to file', async() => {
-        await registerMonitoring.memoryUsageTrunc("./testeUsageTrunc.txt", "GB");
+        await registerMonitoring.registerMemoryUsageTrunc("./testeUsageTrunc.txt", "GB");
         let file = await readFile("./testeUsageTrunc.txt");
         let textFile = file.toString();
 
@@ -37,7 +37,7 @@ describe('Testing the RegisterMonitoring class', () => {
     });
 
     it('#Testing save monitoring of memoryUsageFixed method to file', async() => {
-        await registerMonitoring.memoryUsageFixed("./testeUsageFixed.txt", "GB");
+        await registerMonitoring.registerMemoryUsageFixed("./testeUsageFixed.txt", "GB");
         let file = await readFile("./testeUsageFixed.txt");
         let textFile = file.toString();
 
@@ -47,15 +47,15 @@ describe('Testing the RegisterMonitoring class', () => {
     });
 
     it('#Testing save with error monitoring the memoryUsage method on file', () => {
-        expect(async() => await registerMonitoring.memoryUsage("./testeUsage.txt", "GBB").to.throw(InvalidUnityError));
+        expect(async() => await registerMonitoring.registerMemoryUsage("./testeUsage.txt", "GBB").to.throw(InvalidUnityError));
     });
 
     it('#Testing save with error monitoring the memoryUsageTrunc method on file', () => {
-        expect(async() => await registerMonitoring.memoryUsageTrunc("./testeUsageTrunc.txt", "GBB").to.throw(InvalidUnityError));
+        expect(async() => await registerMonitoring.registerMemoryUsageTrunc("./testeUsageTrunc.txt", "GBB").to.throw(InvalidUnityError));
     });
 
     it('#Testing save with error monitoring the memoryUsageFixed method on file', () => {
-        expect(async() => await registerMonitoring.memoryUsageFixed("./testeUsageFixes.txt", "GBB").to.throw(InvalidUnityError));
+        expect(async() => await registerMonitoring.registerMemoryUsageFixed("./testeUsageFixes.txt", "GBB").to.throw(InvalidUnityError));
     });
 
    
