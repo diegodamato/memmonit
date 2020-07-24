@@ -3,7 +3,9 @@
 [![NPM Downloads][download-image]][download-url]
 [![Build Status][build-status]][build-url]
 
-A library to help monitor operating system memory.
+A library to help monitor operating system memory. 
+**Has typescript support!**
+
 
 # Installation
 
